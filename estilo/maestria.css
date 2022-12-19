@@ -1,0 +1,89 @@
+.maestria-container {
+  background: #cfcfcf;
+  color: #1f1f1f;
+  position: relative;
+}
+
+.maestria {
+  gap: 0px 100px;
+}
+
+.textos {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.maestria-titulo {
+  font-size: 8rem;
+  justify-self: center;
+  grid-column: 1;
+  text-transform: uppercase;
+  grid-row: 1;
+}
+
+.maestria-texto {
+  font-size: 1.25rem;
+  grid-column: 1;
+  align-self: center;
+  justify-self: center;
+  width: 45ch;
+  grid-row: 1;
+  line-height: 1.3;
+  padding-top: 30px;
+}
+
+.maestria-lista {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 0px;
+  list-style: none;
+  font-size: 2rem;
+  justify-self: center;
+  align-items: center;
+  grid-column: 2;
+  grid-row: 1;
+  width: 500px;
+}
+
+.maestria-lista li {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.maestria-lista img {
+  border: 4px solid #1f1f1f;
+  box-shadow: 1px 1px 10px #1f1f1f;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.maestria-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background: rgb(0, 143, 19);
+  border-radius: 50px 0px;
+  box-shadow: 2px 3px 5px #1f1f1f;
+  rotate: 45deg;
+  left: 50px;
+  top: 10px;
+}
+
+.maestria::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background: rgb(0, 189, 25);
+  border-radius: 50px 0px;
+  box-shadow: 2px 3px 5px #1f1f1f;
+  rotate: 40deg;
+  left: 35px;
+  top: -30px;
+}
